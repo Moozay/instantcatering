@@ -1,0 +1,149 @@
+import React from 'react';
+
+const AboutPage = () => {
+  return (
+    <div>
+      {/* About Hero Section */}
+      <section className="bg-blue-800 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
+          <p className="text-xl max-w-3xl mx-auto">Learn about our company, our mission, and the team behind Instant Catering Services.</p>
+        </div>
+      </section>
+
+      {/* Company Overview */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Our Company</h2>
+              <p className="text-gray-700 mb-4">
+                Founded in 1995, Instant Catering Services Ltd. has grown to become a leading provider of premium in-flight catering and hospitality services across the globe. What started as a small operation has evolved into a comprehensive service provider for airlines and airports worldwide.
+              </p>
+              <p className="text-gray-700 mb-4">
+                With state-of-the-art facilities and a team of experienced culinary professionals, we pride ourselves on delivering exceptional food and service that enhances the travel experience for passengers.
+              </p>
+              <p className="text-gray-700">
+                Our commitment to quality, safety, and innovation has made us a trusted partner for airlines seeking reliable and outstanding catering solutions.
+              </p>
+            </div>
+            <div className="order-first lg:order-last">
+              <div className="bg-gray-300 rounded-lg h-80 flex items-center justify-center">
+                <p className="text-gray-600 font-medium">Company Image Placeholder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+              <p className="text-gray-700">
+                Our mission is to elevate the in-flight dining experience by providing exceptional culinary creations and impeccable service to airlines and their passengers. We are dedicated to maintaining the highest standards of food safety, quality, and innovation while supporting the operational goals of our airline partners.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+              <p className="text-gray-700">
+                We aim to be the global leader in aviation catering services, recognized for our culinary excellence, operational efficiency, and commitment to sustainability. Our vision is to continuously redefine the standards of in-flight dining, enhancing the travel experience for millions of passengers worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Core Values</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">The principles that guide everything we do at Instant Catering Services.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Excellence</h3>
+              <p className="text-gray-600">We strive for excellence in every aspect of our operations, from food preparation to customer service.</p>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Integrity</h3>
+              <p className="text-gray-600">We operate with honesty, transparency, and ethical business practices in all our relationships.</p>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Innovation</h3>
+              <p className="text-gray-600">We constantly seek new and better ways to serve our clients and improve our processes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Leadership Team</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Meet the experienced professionals leading Instant Catering Services.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <p className="text-gray-600 font-medium">Team Member Photo</p>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">John Smith</h3>
+                <p className="text-blue-700 mb-4">Chief Executive Officer</p>
+                <p className="text-gray-600">With over 25 years in the hospitality industry, John leads our company with vision and strategic expertise.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <p className="text-gray-600 font-medium">Team Member Photo</p>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Sarah Johnson</h3>
+                <p className="text-blue-700 mb-4">Chief Operations Officer</p>
+                <p className="text-gray-600">Sarah oversees our daily operations, ensuring efficiency and excellence across all departments.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <p className="text-gray-600 font-medium">Team Member Photo</p>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Michael Chen</h3>
+                <p className="text-blue-700 mb-4">Executive Chef</p>
+                <p className="text-gray-600">A culinary master with international experience, Michael leads our food preparation with creativity and precision.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AboutPage;
