@@ -1,38 +1,49 @@
+/* Global App Styles */
 .App {
-    text-align: center;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Button Styles */
+.btn {
+    @apply font-medium py-2 px-4 rounded transition-colors duration-300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.btn-primary {
+    @apply bg-blue-700 text-white hover:bg-blue-800;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.btn-secondary {
+    @apply bg-white text-blue-700 border border-blue-700 hover:bg-blue-50;
 }
 
-.App-link {
-    color: #61dafb;
+/* Section Styles */
+.section {
+    @apply py-16;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.section-title {
+    @apply text-3xl font-bold mb-6 text-center;
+}
+
+.section-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12;
+}
+
+/* Animation for page transitions */
+.page-transition-enter {
+    opacity: 0;
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.page-transition-exit {
+    opacity: 1;
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
 }
