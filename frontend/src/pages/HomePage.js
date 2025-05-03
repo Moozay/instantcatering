@@ -418,26 +418,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        
-        {/* CSS for the auto-scrolling effect */}
-        <style jsx>{`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-          
-          .animate-carousel {
-            animation: scroll 30s linear infinite;
-          }
-          
-          .partner-carousel:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
       </section>
     </div>
   );
