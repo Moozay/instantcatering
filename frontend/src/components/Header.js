@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const isActive = (path) => {
-    return location.pathname === path ? 'text-blue-700 font-semibold' : 'text-gray-800 hover:text-blue-700 font-medium';
+    return location.pathname === path ? 'text-blue-500 font-semibold' : 'text-gray-800 hover:text-blue-700 font-medium';
   };
 
   return (
@@ -19,45 +19,52 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo and Company Name */}
           <div className="flex items-center">
-            <Link to="/">
+          <Link to="/">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/images/logoHeader.png" 
+                alt="Company Logo" 
+                className="w-14 h-14 object-contain" 
+              />
               <div className="flex flex-col">
-                <h1 className="text-xl md:text-2xl font-bold text-blue-900 uppercase tracking-wider">
+                <h1 className="text-xl md:text-2xl font-bold text-green-900 uppercase tracking-wider">
                   Instant Catering Services Ltd.
                 </h1>
                 <p className="text-xs text-gray-600">Premium In-Flight Catering Solutions</p>
               </div>
-            </Link>
+            </div>
+          </Link>
           </div>
           
           {/* Desktop Navigation - Right Side */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link 
               to="/" 
-              className={`${location.pathname === '/' ? 'border-b-2 border-blue-700' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
-              className={`${location.pathname === '/services' ? 'border-b-2 border-blue-700' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/services' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
             >
               Services
             </Link>
             <Link 
               to="/media" 
-              className={`${location.pathname === '/media' ? 'border-b-2 border-blue-700' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/media' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
             >
               Media
             </Link>
             <Link 
               to="/about" 
-              className={`${location.pathname === '/about' ? 'border-b-2 border-blue-700' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/about' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
             >
               About
             </Link>
             <Link 
               to="/contact" 
-              className="uppercase font-medium px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-900"
+              className="uppercase font-medium px-4 py-2 bg-[#3B8454] text-white rounded-full hover:bg-[#2E6B45]"
             >
               Contact Us
             </Link>
