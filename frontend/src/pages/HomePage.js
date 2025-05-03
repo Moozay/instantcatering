@@ -35,9 +35,20 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center uppercase tracking-wide">OUR SERVICE APPROACH</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {/* Left Side - Service Approach Cards 1 & 3 */}
-            <div className="space-y-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Service Image - Left Side */}
+            <div className="lg:col-span-1 flex items-center justify-center">
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1529397938791-2aba4681454f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                  alt="Catering Service" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Service Approach Cards - Right Side */}
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Client-Centric Customization */}
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
@@ -55,26 +66,6 @@ const HomePage = () => {
                 </div>
               </div>
               
-              {/* Operational Efficiency */}
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 text-blue-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Operational Efficiency</h3>
-                  <p className="text-gray-700">
-                    Optimize kitchen and logistics operations to ensure timely and accurate delivery of meals. Utilize advanced technology for inventory management and order tracking.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right Side - Service Approach Cards 2 & 4 */}
-            <div className="space-y-16">
               {/* Quality and Safety Assurance */}
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
@@ -88,6 +79,23 @@ const HomePage = () => {
                   <h3 className="text-xl font-bold mb-2">Quality and Safety Assurance</h3>
                   <p className="text-gray-700">
                     Implement strict quality control measures throughout the food preparation process to ensure freshness, taste, and safety.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Operational Efficiency */}
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Operational Efficiency</h3>
+                  <p className="text-gray-700">
+                    Optimize kitchen and logistics operations to ensure timely and accurate delivery of meals. Utilize advanced technology for inventory management and order tracking.
                   </p>
                 </div>
               </div>
