@@ -320,38 +320,124 @@ const HomePage = () => {
       {/* Partners Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {/* Partner logos would go here - using placeholders */}
-            <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
-              <img 
-                src="https://via.placeholder.com/128x64?text=Partner+1" 
-                alt="Partner 1" 
-                className="max-w-full max-h-full"
-              />
-            </div>
-            <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
-              <img 
-                src="https://via.placeholder.com/128x64?text=Partner+2" 
-                alt="Partner 2" 
-                className="max-w-full max-h-full"
-              />
-            </div>
-            <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
-              <img 
-                src="https://via.placeholder.com/128x64?text=Partner+3" 
-                alt="Partner 3" 
-                className="max-w-full max-h-full"
-              />
-            </div>
-            <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
-              <img 
-                src="https://via.placeholder.com/128x64?text=Partner+4" 
-                alt="Partner 4" 
-                className="max-w-full max-h-full"
-              />
+          <h2 className="text-3xl font-bold mb-8 text-center uppercase tracking-wide">Our Partners</h2>
+          <div className="relative overflow-hidden">
+            {/* Auto-scrolling carousel */}
+            <div className="partner-carousel flex items-center animate-carousel">
+              {/* First set of partner logos */}
+              <div className="flex space-x-16 mx-4">
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+1" 
+                    alt="Partner 1" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+2" 
+                    alt="Partner 2" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+3" 
+                    alt="Partner 3" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+4" 
+                    alt="Partner 4" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+5" 
+                    alt="Partner 5" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+6" 
+                    alt="Partner 6" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+              </div>
+              
+              {/* Duplicated set for infinite scroll effect */}
+              <div className="flex space-x-16 mx-4">
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+1" 
+                    alt="Partner 1" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+2" 
+                    alt="Partner 2" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+3" 
+                    alt="Partner 3" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+4" 
+                    alt="Partner 4" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+5" 
+                    alt="Partner 5" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+                <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+                  <img 
+                    src="https://via.placeholder.com/128x64?text=Partner+6" 
+                    alt="Partner 6" 
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        
+        {/* CSS for the auto-scrolling effect */}
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          
+          .animate-carousel {
+            animation: scroll 30s linear infinite;
+          }
+          
+          .partner-carousel:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
     </div>
   );
