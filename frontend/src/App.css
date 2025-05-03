@@ -29,6 +29,24 @@
     @apply text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12;
 }
 
+/* Partner Carousel Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-carousel {
+    animation: scroll 30s linear infinite;
+}
+
+.partner-carousel:hover {
+    animation-play-state: paused;
+}
+
 /* Animation for page transitions */
 .page-transition-enter {
     opacity: 0;
