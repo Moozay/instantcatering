@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const isActive = (path) => {
-    return location.pathname === path ? 'text-blue-500 font-semibold' : 'text-gray-800 hover:text-blue-700 font-medium';
+    return location.pathname === path ? 'text-[#3B8454] font-semibold' : 'text-gray-800 hover:text-[#3B8454] font-medium';
   };
 
   return (
@@ -40,25 +40,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <Link 
               to="/" 
-              className={`${location.pathname === '/' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-[#3B8454]`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
-              className={`${location.pathname === '/services' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/services' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-[#3B8454]`}
             >
               Services
             </Link>
             <Link 
               to="/media" 
-              className={`${location.pathname === '/media' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/media' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-[#3B8454]`}
             >
               Media
             </Link>
             <Link 
               to="/about" 
-              className={`${location.pathname === '/about' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-blue-700`}
+              className={`${location.pathname === '/about' ? 'border-b-2 border-[#3B8454] ' : ''} uppercase font-medium px-2 py-1 text-gray-800 hover:text-[#3B8454]`}
             >
               About
             </Link>
@@ -73,7 +73,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button 
-              className="text-gray-800 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" 
+              className="text-gray-800 p-2 focus:outline-none focus:ring-2 focus:ring-[#3B8454] rounded" 
               onClick={toggleMobileMenu}
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
@@ -103,7 +103,7 @@ const Header = () => {
           <Link to="/services" className={`uppercase ${isActive('/services')} block py-2 text-center`} onClick={toggleMobileMenu}>Services</Link>
           <Link to="/media" className={`uppercase ${isActive('/media')} block py-2 text-center`} onClick={toggleMobileMenu}>Media</Link>
           <Link to="/about" className={`uppercase ${isActive('/about')} block py-2 text-center`} onClick={toggleMobileMenu}>About</Link>
-          <Link to="/contact" className="uppercase block py-2 bg-blue-800 text-white rounded text-center" onClick={toggleMobileMenu}>Contact Us</Link>
+          <Link to="/contact" className="uppercase block py-2 bg-[#3B8454] text-white rounded text-center" onClick={toggleMobileMenu}>Contact Us</Link>
         </div>
       </div>
     </header>
