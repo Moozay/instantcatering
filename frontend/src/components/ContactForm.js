@@ -17,15 +17,19 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
-
   return (
     <div className="bg-white p-6 shadow-md">
       <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Add Netlify attributes to the form */}
+      <form
+        className="space-y-4"
+        method="POST"
+        data-netlify="true"
+        name="contact"
+      >
+        {/* Hidden input for Netlify form name */}
+        <input type="hidden" name="form-name" value="contact" />
+
         {/* Name Field */}
         <div>
           <label htmlFor="name" className="block mb-1 font-medium">
@@ -38,6 +42,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
         </div>
 
@@ -52,7 +57,7 @@ const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring--[#3B8454]"
+            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -67,7 +72,8 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring--[#3B8454]"
+            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
         </div>
 
@@ -82,7 +88,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring--[#3B8454]"
+            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -96,7 +102,7 @@ const ContactForm = () => {
             name="partnershipType"
             value={formData.partnershipType}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring--[#3B8454]"
+            className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select Partnership Type</option>
             <option value="supplier">Supplier</option>
@@ -109,7 +115,7 @@ const ContactForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full px-4 py-2 bg-[#3B8454] text-white font-medium focus:outline-none focus:ring-2 focus:ring--[#3B8454] hover:bg--[#3B8454] transition-colors duration-300"
+          className="w-full px-4 py-2 bg-[#3B8454] text-white font-medium focus:outline-none focus:ring-2 focus:ring-[#3B8454] hover:bg-[#2E6B44] transition-colors duration-300"
         >
           Submit
         </button>
