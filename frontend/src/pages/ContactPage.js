@@ -41,20 +41,20 @@ const ContactPage = () => {
     <img src="/images/png/mail.png" alt="Email Icon" className="w-6 h-6 mr-2" />
     <div>
       <h3 className="text-lg font-bold mb-1 text-[#3B8454]">Email</h3>
-      <p className="text-gray-700">info@instantcatering.com</p>
+      <p className="text-gray-700">info@instantcatering.com.ng</p>
     </div>
   </div>
 </div>
 
               {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mt-8">
-              <a href="#" className="text-[#3B8454] hover:text-blue-900">
+              <a href="https://wa.me/8163407112" className="text-[#3B8454] hover:text-blue-900"target="_blank" rel="noopener noreferrer">
                 <img src="/images/png/whatsapp.png" alt="WhatsApp Icon" className="w-6 h-6" />
               </a>
-              <a href="#" className="text-blue-700 hover:text-blue-900">
+              <a href="https://x.com/instantcaterng" className="text-blue-700 hover:text-blue-900"target="_blank" rel="noopener noreferrer">
                 <img src="/images/png/x.png" alt="Twitter Icon" className="w-6 h-6" />
               </a>
-              <a href="#" className="text-blue-700 hover:text-blue-900">
+              <a href="https://www.instagram.com/instantcateringservices/" className="text-blue-700 hover:text-blue-900"target="_blank" rel="noopener noreferrer">
                 <img src="/images/png/ig.png" alt="Instagram Icon" className="w-6 h-6" />
               </a>
             </div>
