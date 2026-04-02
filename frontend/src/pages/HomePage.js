@@ -258,6 +258,46 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Certifications & Compliance */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Certifications & Compliance</h2>
+          <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
+            Instant Catering Services Limited proudly holds certifications that reflect our commitment to global food safety and cultural compliance standards, 
+            including Halal, ISO 22000, and quality assurance accreditations.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            <div className="bg-white rounded-lg shadow-md p-4">
+              <img 
+                src="/images/halal1.jpg" // Replace with actual file path
+                alt="Halal Certification" 
+                className="rounded-lg max-h-96 object-contain mx-auto"
+              />
+              <p className="mt-4 text-gray-600 font-medium">Halal Label Order</p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-4">
+              <img 
+                src="/images/halal2.jpg" // Replace with actual file path
+                alt="Quality Assurance Certificate" 
+                className="rounded-lg max-h-96 object-contain mx-auto"
+              />
+              <p className="mt-4 text-gray-600 font-medium">Halal Certification</p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-4">
+              <img 
+                src="/images/iso_cert.jpg" // Replace with actual ISO certificate image path
+                alt="ISO 22000 Certification" 
+                className="rounded-lg max-h-96 object-contain mx-auto"
+              />
+              <p className="mt-4 text-gray-600 font-medium">ISO 22000 Certification</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* What We Offer Section */}
       <section className="py-16">
@@ -343,98 +383,30 @@ const HomePage = () => {
 </section>
 
       {/* Partners Section */}
-<section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-8 text-center uppercase tracking-wide">Our Partners</h2>
     <div className="relative overflow-hidden">
       {/* Auto-scrolling carousel */}
-      <div className="partner-carousel flex items-center space-x-16 animate-scroll">
-        {/* First set of partner logos */}
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p1.png" 
-            alt="Partner 1" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p2.png" 
-            alt="Partner 2" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p3.png" 
-            alt="Partner 3" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p4.png" 
-            alt="Partner 4" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p5.png" 
-            alt="Partner 5" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p6.png" 
-            alt="Partner 6" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        {/* Duplicate set for infinite scroll */}
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p7.png" 
-            alt="Partner 1" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p8.png" 
-            alt="Partner 2" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p9.png" 
-            alt="Partner 3" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p10.png" 
-            alt="Partner 4" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p11.png" 
-            alt="Partner 5" 
-            className="max-w-full max-h-full"
-          />
-        </div>
-        <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
-          <img 
-            src="/images/png/p12.png" 
-            alt="Partner 6" 
-            className="max-w-full max-h-full"
-          />
-        </div>
+      <div
+        className="partner-carousel flex items-center space-x-8 animate-scroll"
+        style={{
+          animation: "scroll 20s linear infinite",
+        }}
+      >
+        {/* Partner Logos */}
+        {[...Array(12)].map((_, index) => (
+          <div
+            key={index}
+            className="w-24 h-12 md:w-32 md:h-16 flex items-center justify-center transition-all duration-300 flex-shrink-0"
+          >
+            <img
+              src={`/images/png/p${index + 1}.png`}
+              alt={`Partner ${index + 1}`}
+              className="max-w-full max-h-full"
+            />
+          </div>
+        ))}
       </div>
     </div>
   </div>

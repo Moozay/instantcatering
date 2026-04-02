@@ -34,6 +34,9 @@ const AboutPage = () => {
         </div>
       </section>
 
+
+
+
       {/* Mission & Vision */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
@@ -96,44 +99,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Meet the experienced professionals leading Instant Catering Services.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-             
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">John Smith</h3>
-                <p className="text-[#3B8454] mb-4">Chief Executive Officer</p>
-                <p className="text-gray-600">With over 25 years in the hospitality industry, John leads our company with vision and strategic expertise.</p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Sarah Johnson</h3>
-                <p className="text-[#3B8454] mb-4">Chief Operations Officer</p>
-                <p className="text-gray-600">Sarah oversees our daily operations, ensuring efficiency and excellence across all departments.</p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Michael Chen</h3>
-                <p className="text-[#3B8454] mb-4">Executive Chef</p>
-                <p className="text-gray-600">A culinary master with international experience, Michael leads our food preparation with creativity and precision.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

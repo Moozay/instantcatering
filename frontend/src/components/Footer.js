@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 uppercase">Instant Catering Service</h3>
             <p className="mb-4 text-gray-300 text-sm">
-              Providing premium in-flight catering solutions and hospitality services since 1995.
+              Providing premium in-flight catering solutions and hospitality services since 2013.
               Our mission is to elevate the in-flight catering experience with exceptional service.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -93,7 +93,7 @@ const Footer = () => {
                   <svg className="w-3 h-3 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/>
                   </svg>
-                  Restaurant Management
+                  Lounge Management
                 </Link>
               </li>
               <li>
@@ -123,8 +123,8 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                <span className="text-gray-300">Nnamdi AzikiweInternal Airport.
-                <br/>FCT - Abuja.</span>
+                <span className="text-gray-300">Instant catering services limited.
+                <br/>F277G+93H Gwaska, Abuja, Federal Capital Territory</span>
               </li>
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
