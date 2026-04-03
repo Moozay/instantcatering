@@ -1,64 +1,102 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Instant Catering Services - Premium in-flight catering and hospitality solutions tailored to the aviation industry." />
-        <meta name="keywords" content="in-flight catering, aviation catering, hospitality services, catering solutions, Instant Catering Services" />
-        <meta name="author" content="Instant Catering Services" />
-        <meta property="og:title" content="Instant Catering Services LTD" />
-        <meta property="og:description" content="Join us in elevating the in-flight dining experience with exceptional catering solutions." />
-        <meta property="og:image" content="%PUBLIC_URL%/images/logoHeader.png" />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Instant Catering Services LTD" />
-        <meta name="twitter:description" content="Join us in elevating the in-flight dining experience with exceptional catering solutions." />
-  
-        <link rel="icon" href="%PUBLIC_URL%/images/logoHeader.png" />
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-        <title>Instant Catering LTD</title>
-        <script type="application/ld+json">
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Instant Catering Services LTD",
-            "url": "https://instantcatering.com.ng",
-            "logo": "https://instantcatering.com.ng/images/logoHeader.png",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+2347039794467",
-              "email": "info@instantcatering.com.ng",
-              "contactType": "Customer Service"
-            }
-          }
-          </script>
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Theme & branding -->
+    <meta name="theme-color" content="#3B8454" />
+    <link rel="icon" href="%PUBLIC_URL%/images/logoHeader.png" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Primary SEO -->
+    <title>Instant Catering Services Ltd | Premium In-Flight Catering Nigeria</title>
+    <meta name="description" content="Instant Catering Services Ltd — Nigeria's premier in-flight catering company. We deliver gourmet meals, restaurant management, laundry, and warehousing solutions to the aviation industry from our 1,500 m² facility in Abuja." />
+    <meta name="keywords" content="in-flight catering Nigeria, aviation catering Abuja, airline meals, halal in-flight meals, airport catering, restaurant management aviation, instant catering services" />
+    <meta name="author" content="Instant Catering Services Ltd" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://instantcatering.com.ng" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    </body>
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:site_name"   content="Instant Catering Services Ltd" />
+    <meta property="og:title"       content="Instant Catering Services Ltd | Premium In-Flight Catering Nigeria" />
+    <meta property="og:description" content="Nigeria's premier in-flight catering company delivering gourmet meals, seamless logistics, and unmatched service to airlines and passengers since 2014." />
+    <meta property="og:image"       content="https://instantcatering.com.ng/images/heroImg.jpeg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url"         content="https://instantcatering.com.ng" />
+    <meta property="og:locale"      content="en_NG" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@instantcaterng" />
+    <meta name="twitter:title"       content="Instant Catering Services Ltd | Premium In-Flight Catering" />
+    <meta name="twitter:description" content="Nigeria's premier in-flight catering company. Gourmet meals, laundry, warehousing for the aviation industry." />
+    <meta name="twitter:image"       content="https://instantcatering.com.ng/images/heroImg.jpeg" />
+
+    <!-- Google Fonts — Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data — LocalBusiness + FoodService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "FoodService"],
+      "name": "Instant Catering Services Ltd",
+      "alternateName": "ICSL",
+      "url": "https://instantcatering.com.ng",
+      "logo": "https://instantcatering.com.ng/images/logoHeader.png",
+      "image": "https://instantcatering.com.ng/images/heroImg.jpeg",
+      "description": "Nigeria's premier in-flight catering company delivering gourmet meals, seamless logistics, and unmatched service to airlines and passengers since 2014.",
+      "foundingDate": "2014",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "F277G+93H Gwaska",
+        "addressLocality": "Abuja",
+        "addressRegion": "Federal Capital Territory",
+        "addressCountry": "NG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.012433,
+        "longitude": 7.274202
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+2347039794467",
+          "contactType": "customer service",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+2348163407123",
+          "contactType": "sales",
+          "availableLanguage": "English"
+        }
+      ],
+      "email": "info@instantcatering.com.ng",
+      "sameAs": [
+        "https://x.com/instantcaterng",
+        "https://www.instagram.com/instantcateringservices/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Aviation Catering Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Flight Catering" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restaurant Management" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Professional Laundry Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehousing & Logistics" } }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>

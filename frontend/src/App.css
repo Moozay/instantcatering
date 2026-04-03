@@ -1,72 +1,37 @@
-/* Global App Styles */
-.App {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* Button Styles */
-.btn {
-    @apply font-medium py-2 px-4 rounded transition-colors duration-300;
-}
-
-.btn-primary {
-    @apply bg-blue-700 text-white hover:bg-blue-800;
-}
-
-.btn-secondary {
-    @apply bg-white text-blue-700 border border-blue-700 hover:bg-blue-50;
-}
-
-/* Section Styles */
-.section {
-    @apply py-16;
-}
-
-.section-title {
-    @apply text-3xl font-bold mb-6 text-center;
-}
-
-.section-subtitle {
-    @apply text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12;
-}
-
-/* Partner Carousel Animation */
+/* ── Partner Carousel ──────────────────────────────────────────────────────── */
 @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .partner-carousel {
-    display: flex;
-    animation: scroll 20s linear infinite;
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
-.animate-carousel {
-    animation: scroll 30s linear infinite;
+.partner-carousel {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
 }
 
 .partner-carousel:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
-/* Animation for page transitions */
-.page-transition-enter {
-    opacity: 0;
+/* ── Page fade-in ──────────────────────────────────────────────────────────── */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.page-transition-enter-active {
-    opacity: 1;
-    transition: opacity 300ms;
+.page-fade-in {
+  animation: pageFadeIn 0.35s ease-out forwards;
 }
 
-.page-transition-exit {
-    opacity: 1;
+/* ── Aspect ratio helper for older Safari ───────────────────────────────────── */
+.aspect-video-wrap {
+  position: relative;
+  padding-top: 56.25%;
 }
-
-.page-transition-exit-active {
-    opacity: 0;
-    transition: opacity 300ms;
+.aspect-video-wrap > * {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
